@@ -1,9 +1,97 @@
-1499085518628	geckodriver	INFO	Listening on 127.0.0.1:58015
-1499085519686	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
-1499085522989	Marionette	INFO	Listening on port 35669
+1499092667475	geckodriver	INFO	Listening on 127.0.0.1:51876
+1499092668537	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499092672369	Marionette	INFO	Listening on port 36913
 *************************
 A coding exception was thrown and uncaught in a Task.
 
 Full message: TypeError: NetworkError when attempting to fetch resource.
 Full stack: 
 *************************
+1499093295085	geckodriver	INFO	Listening on 127.0.0.1:55321
+1499093296145	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499093299652	Marionette	INFO	Listening on port 44576
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1499094324902	geckodriver	INFO	Listening on 127.0.0.1:48729
+1499094325963	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499094330598	Marionette	INFO	Listening on port 36065
+1499094488597	geckodriver	INFO	Listening on 127.0.0.1:44394
+1499094489659	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499094493411	Marionette	INFO	Listening on port 44559
+1499094781156	geckodriver	INFO	Listening on 127.0.0.1:36880
+1499094782219	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499094785936	Marionette	INFO	Listening on port 36712
+1499094962925	geckodriver	INFO	Listening on 127.0.0.1:47683
+1499094963986	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499094967570	Marionette	INFO	Listening on port 43931
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1499095864640	geckodriver	INFO	Listening on 127.0.0.1:38442
+1499095865705	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499095869097	Marionette	INFO	Listening on port 33140
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1499097470225	geckodriver	INFO	Listening on 127.0.0.1:56074
+1499097471289	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499097474958	Marionette	INFO	Listening on port 43768
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1499100973663	geckodriver	INFO	Listening on 127.0.0.1:59140
+1499100974719	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499100978365	Marionette	INFO	Listening on port 39917
+JavaScript error: http://bookings.smartwings.com/en/javascript/sectorPricer.js?version=2.6.8.175, line 9: NS_ERROR_NOT_INITIALIZED: 
+1499101052957	geckodriver	INFO	Listening on 127.0.0.1:37194
+1499101054017	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499101057481	Marionette	INFO	Listening on port 43414
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1499103488098	geckodriver	INFO	Listening on 127.0.0.1:38309
+1499103489157	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499103492598	Marionette	INFO	Listening on port 40925
+1499103732647	geckodriver	INFO	Listening on 127.0.0.1:32862
+1499103733708	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499103737492	Marionette	INFO	Listening on port 40470
+1499103923130	geckodriver	INFO	Listening on 127.0.0.1:45571
+1499103924190	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499103927949	Marionette	INFO	Listening on port 38604
+1499104180995	geckodriver	INFO	Listening on 127.0.0.1:46915
+1499104182053	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499104185500	Marionette	INFO	Listening on port 46494
+1499104389344	Marionette	INFO	New connections will no longer be accepted
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1499104512206	geckodriver	INFO	Listening on 127.0.0.1:32920
+1499104513266	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499104516692	Marionette	INFO	Listening on port 46096
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1499106011169	Marionette	INFO	New connections will no longer be accepted
+[Child 26195] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-IKSm1A/firefox-53.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
