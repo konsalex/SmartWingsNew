@@ -1,0 +1,9 @@
+1499085518628	geckodriver	INFO	Listening on 127.0.0.1:58015
+1499085519686	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499085522989	Marionette	INFO	Listening on port 35669
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
