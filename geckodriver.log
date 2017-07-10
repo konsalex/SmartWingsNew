@@ -95,3 +95,38 @@ Full stack:
 *************************
 1499106011169	Marionette	INFO	New connections will no longer be accepted
 [Child 26195] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-IKSm1A/firefox-53.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+1499698669420	geckodriver	INFO	Listening on 127.0.0.1:47443
+1499698670532	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499698674851	Marionette	INFO	Listening on port 41144
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1499699783625	geckodriver	INFO	Listening on 127.0.0.1:37046
+1499699784683	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499699788252	Marionette	INFO	Listening on port 34835
+1499699996831	Marionette	INFO	New connections will no longer be accepted
+1499700146844	geckodriver	INFO	Listening on 127.0.0.1:46860
+1499700147905	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499700151277	Marionette	INFO	Listening on port 34936
+1499700360717	Marionette	INFO	New connections will no longer be accepted
+1499701049384	geckodriver	INFO	Listening on 127.0.0.1:32963
+1499701050447	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499701053899	Marionette	INFO	Listening on port 37384
+1499701263990	Marionette	INFO	New connections will no longer be accepted
+1499701614925	geckodriver	INFO	Listening on 127.0.0.1:45882
+1499701615988	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499701619417	Marionette	INFO	Listening on port 36878
+1499701828521	Marionette	INFO	New connections will no longer be accepted
+1499704115614	geckodriver	INFO	Listening on 127.0.0.1:45735
+1499704116676	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1499704119968	Marionette	INFO	Listening on port 36340
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1499705446509	Marionette	INFO	Ceased listening

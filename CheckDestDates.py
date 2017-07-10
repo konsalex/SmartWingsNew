@@ -115,11 +115,3 @@ with open("AirTickets.csv", "r") as db:
                 if ((day2-day1).days==int(day)):
                     print y[1].strip()+" "+z[1].strip() 
 
-
-
-
-
-        
-        
-
-        

@@ -31,9 +31,9 @@ wait = WebDriverWait(driver, 1300)
 
 today=arrow.utcnow().format('DD-MM-YYYY')
 
-From=["PRG"]
 From=["PRG","BRQ"]
 
+#TO=["CFU"]
 
 TO=["HER","CFU","RHO","ZTH","KGS"]
 
@@ -57,13 +57,20 @@ with open("AirTickets.csv", "wb") as AirTickets:
          
             time.sleep(15)
 
+            try:
+                driver.find_element(By.ID,'warningMessage')
+            except:
+                print "Switching Date"
+
             dest=[]
             
             dates=[]
 
-            for x in xrange(0,4):
+            for x in xrange(0,8):
 
-                while True:
+                timeout = time.time() + 30 # 30 seconds from now  Εδω κανονικά πρέπει να βάλω condition για το warning message
+
+                while True and time.time() < timeout:
                     try:
                         driver.find_element(By.ID,'calendarContainer0')
                         break
