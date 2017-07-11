@@ -22,7 +22,7 @@ def month_converter(month):
 
 
 
-def calcDates(today,t,z):
+def calcDates(dest,dates,today,t,z):
 
     tod=today.format('DD-MM-YYYY')
     
@@ -36,19 +36,19 @@ def calcDates(today,t,z):
         error_message=driver.find_element(By.ID,'warningMessage')
         
         if error_message.is_displayed() :
+        
+            print "Error Found "
             
             today=today.replace(days=+3)
 
-            dest,dates=calcDates(today,t,z)
+            calcDates(dest,dates,today,t,z)
 
             return (dest,dates)
 
     except:
         print "Continue"
 
-    dest=[]
-    
-    dates=[]
+
 
     for x in xrange(0,10):
 
@@ -83,9 +83,21 @@ def calcDates(today,t,z):
 
                     dates.append(date)
 
-        print dates
 
-        driver.find_element(By.CLASS_NAME,'days_r').click()
+        try:
+            driver.find_element(By.CLASS_NAME,'days_r').click()
+        except:
+            print "Error Found "
+            
+            if x==0:
+                today=today.replace(days=+3)
+
+                calcDates(dest,dates,today,t,z)
+
+                return (dest,dates)
+            else:
+                return (dest,dates)
+            
 
         
 
@@ -105,12 +117,15 @@ wait = WebDriverWait(driver, 1300)
 
 today=arrow.utcnow()
 
-From=["PRG","BRQ"]
+#From=["PRG","BRQ"]
+From=["PRG"]
+TO=["KGS","RHO"]
 
-#TO=["CFU"]
+#TO=["CFU","RHO","ZTH","KGS","HER"]
 
-TO=["HER","CFU","RHO","ZTH","KGS"]
-       
+dest=[]
+
+dates=[]
 
 with open("AirTickets.csv", "wb") as AirTickets:
 
@@ -121,17 +136,32 @@ with open("AirTickets.csv", "wb") as AirTickets:
     for t in From:
 
         for z in TO:
+        
+            if (t=="BRQ" and z=="KGS"):
+                
+                continue
 
-            dest,dates=calcDates(today,t,z)
-            
+            calcDates(dest,dates,today,t,z)
             writer.writerows(zip(dest,dates))
+            del(dest[:])
+            del(dates[:])
+            
+            
 
-    for t in To:
+    for t in TO:
+        
         for z in From:
             
-            dest,dates=calcDates(today,t,z)
+            if (t=="KGS" and z=="BRQ"):
             
+                continue
+            
+            calcDates(dest,dates,today,t,z)
             writer.writerows(zip(dest,dates))
+            del(dest[:])
+            del(dates[:])
+            
+    
 
 
 driver.quit()
