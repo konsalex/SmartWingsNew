@@ -117,11 +117,11 @@ wait = WebDriverWait(driver, 1300)
 
 today=arrow.utcnow()
 
-#From=["PRG","BRQ"]
-From=["PRG"]
-TO=["KGS","RHO"]
+From=["PRG","BRQ"]
+#From=["PRG"]
+#TO=["KGS","RHO"]
 
-#TO=["CFU","RHO","ZTH","KGS","HER"]
+TO=["CFU","RHO","ZTH","KGS","HER"]
 
 dest=[]
 
