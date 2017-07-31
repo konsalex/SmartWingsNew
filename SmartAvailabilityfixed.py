@@ -107,6 +107,17 @@ def calcDates(dest,dates,today,t,z):
 
 
 
+### Delete old Airtickets and dateDest ###
+
+try:
+    os.remove("dateDest.csv")
+except:
+    continue
+
+try:
+    os.remove("AirTickets.csv")
+except:
+    continue
 
 
 driver = webdriver.Firefox()
@@ -117,11 +128,10 @@ wait = WebDriverWait(driver, 1300)
 
 today=arrow.utcnow()
 
-#From=["PRG","BRQ"]
-From=["BRQ"]
-TO=["RHO"]
+From=["PRG","BRQ"]
 
-#TO=["CFU","RHO","ZTH","KGS","HER"]
+
+TO=["CFU","RHO","ZTH","KGS","HER"]
 
 dest=[]
 
@@ -162,7 +172,7 @@ with open("AirTickets.csv", "wb") as AirTickets:
             del(dates[:])
             
     
-
+writer.writerows(zip(["ok"]))
 
 driver.quit()
 
